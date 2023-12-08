@@ -1,6 +1,6 @@
 import { deleteEmployee } from "@/server/api";
 import { useRouter } from "next/navigation";
-import Modal from "../appcomponents/Modal";
+import Modal from "../empComponents/Modal";
 
 interface DeleteEmployeeModalProps {
   isOpen: boolean;

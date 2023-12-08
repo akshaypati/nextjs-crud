@@ -1,5 +1,5 @@
 import { IEmployees } from "@/interface/employees";
-import Modal from "../appcomponents/Modal";
+import Modal from "../empComponents/Modal";
 
 interface ViewEmployeeModalProps {
   isOpen: boolean;
