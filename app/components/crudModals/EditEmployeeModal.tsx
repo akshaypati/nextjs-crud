@@ -3,7 +3,7 @@ import { IEmployees } from "@/interface/employees";
 import { FormEventHandler, useState } from "react";
 import { editEmployee } from "@/server/api";
 import { useRouter } from "next/navigation";
-import Modal from "../empComponents/Modal";
+import Modal from "../modal/Modal";
 
 interface EditEmployeeModalProps {
   isOpen: boolean;

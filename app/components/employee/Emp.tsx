@@ -6,9 +6,9 @@ import { FaEye } from "react-icons/fa";
 import { FormEventHandler, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { deleteEmployee, editEmployee } from "@/server/api";
-import DeleteEmployeeModal from "../modal/DeleteEmployeeModal";
-import ViewEmployeeModal from "../modal/ViewEmployeeModal";
-import EditEmployeeModal from "../modal/EditEmployeeModalContent";
+import DeleteEmployeeModal from "../crudModals/DeleteEmployeeModal";
+import ViewEmployeeModal from "../crudModals/ViewEmployeeModal";
+import EditEmployeeModal from "../crudModals/EditEmployeeModal";
 
 interface EmpProps {
   emp: IEmployees;

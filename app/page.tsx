@@ -1,5 +1,5 @@
-import EmpDetails from './components/empComponents/EmpDetails'
-import AddEmployee from './components/empComponents/AddEmployee'
+import EmpDetails from './components/employee/EmpDetails'
+import AddEmployee from './components/employee/AddEmployee'
 import { getAllEmployees } from '@/server/api'
 
 export default async function Home() {
