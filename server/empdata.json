@@ -1,0 +1,40 @@
+{
+  "empData": [
+    {
+      "id": 1,
+      "firstName": "Akshay___",
+      "lastName": "Patils",
+      "contact": "5454545",
+      "email": "akshaypati@cybage.com",
+      "address": "Kolhapur",
+      "bloodgroup": "A+"
+    },
+    {
+      "id": "2",
+      "firstName": "Virat",
+      "lastName": "Kohli",
+      "contact": "6546542",
+      "email": "akki@gmail.com",
+      "address": "Pune",
+      "bloodgroup": "B"
+    },
+    {
+      "id": "NEUUGAk",
+      "firstName": "Akshay_",
+      "lastName": "Kohli",
+      "contact": "6546542",
+      "email": "",
+      "address": "",
+      "bloodgroup": "AB+"
+    },
+    {
+      "id": "bf91dad9-30ca-45ba-9c89-c66bf87760fa",
+      "firstName": "Akshay_",
+      "lastName": "",
+      "contact": "9766554422",
+      "email": "",
+      "address": "",
+      "bloodgroup": "A+"
+    }
+  ]
+}
