@@ -1,4 +1,4 @@
-import { IEmployees } from "@/interface/employees";
+import { IEmployees } from "@/app/interface/employees";
 import Modal from "../modal/Modal";
 
 interface ViewEmployeeModalProps {

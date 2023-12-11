@@ -1,5 +1,5 @@
 "use client";
-import { IEmployees } from "@/interface/employees";
+import { IEmployees } from "@/app/interface/employees";
 import { MdEditDocument } from "react-icons/md";
 import { BsTrashFill } from "react-icons/bs";
 import { FaEye } from "react-icons/fa";
@@ -28,7 +28,7 @@ const Emp: React.FC<EmpProps> = ({ emp }) => {
   const [openModalDelete, setOpenModalDelete] = useState<boolean>(false);
   const [openModalView, setOpenModalView] = useState<boolean>(false);
 
-  // Set initial state values when the component mounts or when 'emp' changes
+  //initial state values when the component mounts or when 'emp' changes
   useEffect(() => {
     setFnameToEdit(emp.firstName);
     setLnameToEdit(emp.lastName);

@@ -1,5 +1,5 @@
 import { error } from "console";
-import { IEmployees } from "../interface/employees";
+import { IEmployees } from "../app/interface/employees";
 
 const baseUrl = 'http://localhost:3001';
 
@@ -24,7 +24,7 @@ export const getAllEmployees = async (): Promise<IEmployees[]> => {
 export const addEmployee = async (employee: IEmployees): Promise<IEmployees> => {
     try {
         const res = await fetch(`${baseUrl}/empData`, {
-            method: 'POST', // Assuming you are creating a new resource, so use POST
+            method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -48,7 +48,7 @@ export const addEmployee = async (employee: IEmployees): Promise<IEmployees> => 
 export const editEmployee = async (employee: IEmployees): Promise<IEmployees> => {
     try {
         const res = await fetch(`${baseUrl}/empData/${employee.id}`, {
-            method: 'PUT', // Assuming you are creating a new resource, so use POST
+            method: 'PUT', 
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -63,7 +63,7 @@ export const editEmployee = async (employee: IEmployees): Promise<IEmployees> =>
         console.log(updatedEmployee);
         return updatedEmployee;
     } catch (error) {
-        console.error('Error adding employee:', error);
+        console.error('Error edit employee:', error);
         throw error;
     }
 };
@@ -73,13 +73,13 @@ export const editEmployee = async (employee: IEmployees): Promise<IEmployees> =>
 export const deleteEmployee = async (id: string): Promise<void> => {
     try {
         const res = await fetch(`${baseUrl}/empData/${id}`, {
-            method: 'DELETE', // Assuming you are creating a new resource, so use POST
+            method: 'DELETE', 
         });
         if (!res.ok) {
             throw new Error(`Error: ${res.status} - ${res.statusText}`);
         }
     } catch (error) {
-        console.error('Error adding employee:', error);
+        console.error('Error deleting employee:', error);
         throw error;
     }
 };

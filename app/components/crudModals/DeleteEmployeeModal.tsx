@@ -8,11 +8,7 @@ interface DeleteEmployeeModalProps {
   employeeId: string;
 }
 
-const DeleteEmployeeModal: React.FC<DeleteEmployeeModalProps> = ({
-  isOpen,
-  onClose,
-  employeeId,
-}) => {
+const DeleteEmployeeModal: React.FC<DeleteEmployeeModalProps> = ({ isOpen, onClose, employeeId,}) => {
   const router = useRouter();
 
   const handleDeleteEmployee = async () => {
@@ -25,7 +21,7 @@ const DeleteEmployeeModal: React.FC<DeleteEmployeeModalProps> = ({
     <Modal modalOpen={isOpen} setModalOpen={onClose}>
       <h3 className="text-lg">Are you sure you want to delete the employee?</h3>
       <div className="modal-action">
-        <button onClick={handleDeleteEmployee} className="btn">
+        <button onClick={handleDeleteEmployee} className="btn  btn-accent btn-outline hover:bg-red-300">
           Yes
         </button>
       </div>

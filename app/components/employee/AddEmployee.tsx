@@ -58,9 +58,9 @@ const AddEmployee = () => {
     <div>
       <button
         onClick={() => setModalOpen(true)}
-        className="btn btn-primary float-right"
+        className="btn btn-accent btn-outline float-right hover:bg-red-300"
       >
-        Add Emp
+        Add Employee
         <FaPlus className="ml-1" size={15} />
       </button>
       <AddEmployeeModal
